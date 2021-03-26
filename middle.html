@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中分结构 - 响应式</title>
+  <!-- 响应式需要引入wrapper.css -->
+  <link rel="stylesheet" href="./wrapper.css">
+  <link rel="stylesheet" href="./layout.css">
+
+</head>
+
+<body>
+  <div class="wp-column">
+    <div class="wp-header">
+      <!-- 以下可替换区-->
+      <div style="text-align: center;">
+        顶部导航栏区
+      </div>
+    </div>
+    <div class="wp-center">
+      <!-- 以下可替换区 如果不要响应式自知应宽，可删除class="wp-1200"-->
+      <div class="wp-1200" style="border-left:1px solid #999;border-right:1px solid #999;text-align: center;padding-top: 100px;height: 1000px;">
+        中间内容区，如果不需要响应式自知应宽，可删除class="wp-1200"
+        <p style="color:red;font-size: 36px;line-height: 60px;">新窗口打开<br/>尝试缩放窗口查看中间区域的宽度变化</p>
+      </div>
+    </div>
+    <div class="wp-footer">
+      <!-- 以下可替换区-->
+      <div style=" height: 100px;background-color: #333;color: white;text-align: center;line-height: 100px;">
+        页脚区，它总是在页面底部，即使中间区内容高度不足。
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

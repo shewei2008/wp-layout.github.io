@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+html,body,.wp-page,.wp-page-flex{
+    width: 100%;
+    height: 100%;
+}
+
+.wp-page-flex {
+    display: flex;
+}
+.wp-footer {
+    min-height: 20px;
+    border-top: 1px solid #d7dae2;
+  }
+.wp-header {
+    min-height: 60px;
+    line-height: 59px;
+    border-bottom: 1px solid #d7dae2;
+    box-sizing: border-box;
+}
+.wp-header-fixed{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    min-height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #d7dae2;
+    z-index: 99;
+    background-color: white;
+}
+.wp-center {
+    flex: auto;
+}
+.wp-column,.wp-column-y {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wp-column-y {
+    overflow-y: auto;
+    min-height: auto;
+  }
+.wp-side {
+    /* 侧边栏外层div设置宽度需要设置flex-shrink: 0;防止压缩 */
+    flex-shrink: 0;
+  }

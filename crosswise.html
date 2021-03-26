@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>左侧栏占整个高度</title>
+  <link rel="stylesheet" href="./layout.css">
+
+</head>
+
+<body>
+  <div class="wp-page-flex">
+    <div class="wp-side">
+      <!-- 以下可替换-->
+      <div
+        style="width: 150px;background-color: teal; height: 100%;color: white; text-align: center; line-height: 100px;">
+        这是侧边栏
+      </div>
+    </div>
+    <div class="wp-column-y">
+      <div class="wp-header">
+        <!-- 以下可替换区-->
+        <div style="text-align: center;">
+          顶部导航栏区
+        </div>
+      </div>
+      <div class="wp-center">
+        <!-- 以下可替换区-->
+        <div style="text-align: center;margin-top: 100px;height: 1000px;">
+          中间内容区
+        </div>
+      </div>
+      <div class="wp-footer">
+        <!-- 以下可替换区-->
+        <div style=" height: 100px;background-color: #333;color: white;text-align: center;line-height: 100px;">
+          页脚区，它总是在页面底部，即使中间区内容高度不足。
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
